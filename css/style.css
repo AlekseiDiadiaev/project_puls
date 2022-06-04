@@ -1,0 +1,108 @@
+* {
+  font-family: 'Museo Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 650px;
+  background: url(../img/bg1.jpg) center center/cover no-repeat;
+}
+
+.top-header-box {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 33%;
+}
+
+.representative {
+  width: 33%;
+  font-size: 12px;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.representative span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.call-box {
+  width: 33%;
+  text-align: right;
+}
+
+.tel {
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+}
+
+.tel:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.call-me-btn {
+  color: white;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: #c70101;
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 700;
+}
+
+h2.subtitle {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 500;
+}
