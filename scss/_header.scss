@@ -1,0 +1,58 @@
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    
+    &__logo {
+        width: 33%;
+        img{
+            max-width: 260px;
+        }
+    }
+    
+    &__representative {
+        width: 33%;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        line-height: 1.7;
+        text-align: center;
+
+        & span {
+            font-size: 18px;
+            font-weight: 700;           
+        }
+    }
+        
+    &__call {
+        width: 33%;
+        text-align: right;
+        line-height: 7px;
+        
+        .header__tel {
+            display: block;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            text-align: right;
+            text-decoration: none;
+            margin-bottom: 13px;
+          }
+        .header__tel:hover {
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+        }
+
+        &__button  {
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border-width: 0;
+            background-color: rgb(199, 1, 1);               
+            width: 150px;
+            height: 30px;               
+            font-size: 12px;
+            text-transform: uppercase;               
+            text-align: center;                 
+          }
+    }
+        
+}

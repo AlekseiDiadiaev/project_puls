@@ -1,0 +1,62 @@
+
+.promo {
+    height: 650px;
+    background: url(../img/bg1.jpg) center center/cover no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 83px;
+    }
+    &__titel {     
+        font-size: 42px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: right;  
+        font-weight: 700; 
+    }
+    &__subtitle {
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: right;  
+        font-width: 500;
+    }
+    &__icon-box {
+        margin-top: 57px;
+        display: flex;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        font-weight: 500;      
+    }
+    &__icon {
+        width: 26%;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 18px;
+        }
+    }
+    &__link {  
+        margin-top: 16px;     
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: right; 
+        font-weight: 500;
+        a { 
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        } 
+        a:hover {
+            font-size: 17px;
+        }      
+    } 
+
+}    
+        

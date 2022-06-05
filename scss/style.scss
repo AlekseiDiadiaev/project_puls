@@ -2,8 +2,13 @@
     font-family:  'Museo Sans', sans-serif
 }
 
-@import "_fonts.scss";
-@import "_general.scss";
 
+@import "_promo.scss";
+@import "_header.scss";
+@import "_button";
 
- 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
