@@ -85,7 +85,19 @@
             }
         }
     }
+    
+    .consultation {
+        padding: 70px 0 50px 0;
+        min-height: 550px;
+        &__title{       
+            font-size: 30px;
+        }
+    } 
+    .feed-form {  
+        margin-top: 40px; 
+    }   
 }
+
 
 @media (max-width: 575px) {
     .header {
@@ -107,43 +119,95 @@
         }
 
     }
-        .button{
-            &_header { 
-                font-size: 10px;
-                width: 110px;
-                height: 20px; 
-            }
-            &_main {
-                width: 250px;
-                height: 35px;
-                font-size: 14px;
-                margin-top: 55px
-            }
-    
+    .button{
+        &_header { 
+            font-size: 10px;
+            width: 110px;
+            height: 20px; 
         }
-    
-        .promo {
-            height: 380px;
-            &__wrapper {
-                margin-top: 40px;
-                align-items: center;
-            }
-    
-            &__titel {
-                font-size: 25px;
-            }
-            &__subtitle {
-                font-size: 16px;
-            }
-            &__icon-box {
-                display: none;
-            }
-            &__link {
-                margin-top: 15px;
-                font-size: 12px;
-            }
-       } 
-                  
+        &_main {
+            width: 250px;
+            height: 35px;
+            font-size: 14px;
+            margin-top: 55px
+        }
+        &_feed-form {
+            width: 250px;
+            height: 35px;
+            font-size: 14px;
+            padding-top: 2px;
+        }
+
     }
+
+    .promo {
+        height: 380px;
+        &__wrapper {
+            margin-top: 40px;
+            align-items: center;
+        }
+
+        &__titel {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__icon-box {
+            display: none;
+        }
+        &__link {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    } 
+    .title-benefits {
+        font-size: 20px;
+    }
+    
+    .consultation {
+        padding: 70px 0 50px 0;
+        min-height: 400px;
+        text-align: center;
+        &__title{       
+            font-size: 23px;
+            text-align: center;
+        }
+    } 
+    .feed-form {  
+        margin-top: 40px;
+        font-size: 16px; 
+        form {
+            :first-child {
+                margin-top: 25px;
+            }                   
+            input {
+                display: block;           
+                border-radius: 5px;
+                border: 0;
+                width: 100%;
+                height: 50px;               
+                font-size: 14px;
+                margin-top: 15px;
+                padding: 0 20px;
+            }
+        }    
+    } 
+    .footer { 
+        height: 400px;    
+        &__address {
+            width: 90vw;
+            height: 250px;    
+        }
+        &__address {
+            span {
+                font-size: 15px;       
+            }         
+        }
+        &__tel {
+            font-size: 15px;       
+        }     
+    }                  
+}
 
     
