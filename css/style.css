@@ -240,6 +240,71 @@
   padding: 0 20px;
 }
 
+.carousel {
+  padding: 81px 0;
+  height: 745px;
+}
+
+.carousel__inner {
+  position: relative;
+  margin: 0 auto;
+  width: 750px;
+}
+
+.carousel .slick-prev {
+  border: none;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -66px;
+}
+
+.carousel .slick-prev img {
+  width: 31px;
+  height: 50px;
+}
+
+.carousel .slick-next {
+  border: none;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -66px;
+}
+
+.carousel .slick-next img {
+  width: 31px;
+  height: 50px;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+
+.slick-dots li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.slick-dots li button {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  font-size: 0px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slick-dots .slick-active button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .footer {
   height: 630px;
   background: url(../img/map.jpg) center center/cover no-repeat;
@@ -287,6 +352,16 @@
 @media (max-width: 991px) {
   .promo {
     height: 575px;
+  }
+  .carousel {
+    padding: 50px 0;
+    height: 550px;
+  }
+  .carousel__inner {
+    width: 550px;
+  }
+  .carousel__inner img {
+    width: 550px;
   }
 }
 
@@ -460,5 +535,15 @@
   }
   .footer__tel {
     font-size: 15px;
+  }
+  .carousel {
+    padding: 50px 0;
+    height: auto;
+  }
+  .carousel__inner {
+    width: 95vw;
+  }
+  .carousel__inner img {
+    width: 95vw;
   }
 }
