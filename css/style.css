@@ -394,7 +394,7 @@
   margin-top: 14px;
 }
 
-.catalog-item__link {
+.catalog-item__link-main {
   margin-top: 15px;
   display: block;
   font-size: 14px;
@@ -405,7 +405,7 @@
   line-height: 12px;
 }
 
-.catalog-item__link:hover {
+.catalog-item__link-main:hover {
   color: #551010;
 }
 
@@ -417,7 +417,7 @@
 .catalog-item__main {
   width: 256px;
   margin-right: 22px;
-  transition: 0.5s all;
+  transition: 0.1s all;
 }
 
 .catalog-item__main_active {
@@ -430,7 +430,7 @@
   width: 256px;
   margin-left: 22px;
   visibility: hidden;
-  transition: 0.5s all;
+  transition: 0.1s all;
 }
 
 .catalog-item__second_active {
@@ -461,7 +461,7 @@
   top: 5px;
 }
 
-.catalog-item__second a {
+.catalog-item__link-second {
   font-size: 14px;
   color: #c70101;
   text-decoration: underline;
