@@ -1,11 +1,20 @@
 .footer {
     height: 630px;
-    background: url(../img/map.jpg) center center/cover no-repeat;
+    width: 100%;
+    position: relative;
+            &__map {
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
     &__address {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 465px;
         height: 275px;
         background-color: #c70101;
-        margin: 0 auto;
         padding: 42px;
         span {
             display: block;
@@ -32,7 +41,11 @@
         justify-content:center;
         img {
             margin: 0 15px;
-        }
+            border-radius: 100%;
+            &:hover {
+                box-shadow: inset 0px 0px 20px rgb(255, 255, 255),
+                            0px 0px 20px rgb(255, 255, 255);
+            }    
+        }         
     }
-
 }

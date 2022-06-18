@@ -1,6 +1,11 @@
 @media (max-width: 991px) {
     .promo {
         height: 575px;
+        &__link {  
+            a:hover {
+                font-size: 16px;
+            }      
+        } 
     }
     .carousel {
         padding: 50px 0;
@@ -14,7 +19,31 @@
     }
     .catalog {
         padding-bottom: 50px;
+        &__tab {      
+            &:hover {
+                box-shadow: none;
+            }        
+        }
     }
+    .button  {
+        &:hover {
+            box-shadow: none;
+        }
+        &_catalog-item {
+            &:hover {
+                box-shadow: none;
+            }
+        }             
+    } 
+    .footer {
+        &__social-box {
+            img {
+                &:hover {
+                    box-shadow: none;
+                }    
+            }         
+        }
+    } 
 }
 
 @media (max-width: 767px) {
@@ -73,6 +102,9 @@
         &__link {
             margin-top: 15px;
             font-size: 12px;
+            a:hover {
+                font-size: 12px;
+            }  
         }
    } 
     
