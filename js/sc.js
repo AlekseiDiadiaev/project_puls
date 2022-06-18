@@ -1,35 +1,21 @@
 // Реализация табов
-const elTab = document.getElementsByClassName("catalog__tab");
+const elTab = document.querySelectorAll(".catalog__tab");
 const elCatContent = document.querySelectorAll('.catalog__content');
 
-function tab1() {
-    elTab[0].className =  "catalog__tab catalog__tab_active";
-    elTab[1].className =  "catalog__tab";
-    elTab[2].className =  "catalog__tab";
-    elCatContent[0].className = "catalog__content catalog__content_active";
-    elCatContent[1].className = "catalog__content";
-    elCatContent[2].className = "catalog__content";
-  }
-function tab2() {
-    elTab[1].className =  "catalog__tab catalog__tab_active";
-    elTab[0].className =  "catalog__tab";
-    elTab[2].className =  "catalog__tab";
-    elCatContent[1].className = "catalog__content catalog__content_active";
-    elCatContent[0].className = "catalog__content";
-    elCatContent[2].className = "catalog__content";
-}
-function tab3() {
-    elTab[2].className =  "catalog__tab catalog__tab_active";
-    elTab[0].className =  "catalog__tab";
-    elTab[1].className =  "catalog__tab";
-    elCatContent[2].className = "catalog__content catalog__content_active";
-    elCatContent[0].className = "catalog__content";
-    elCatContent[1].className = "catalog__content";
-}
+elTab.forEach((item,i) =>{
+    item.addEventListener('click', () =>{
+        elTab.forEach(item =>{
+            item.className =  "catalog__tab";
+        });
+        item.className =  "catalog__tab catalog__tab_active";
+        
+        elCatContent.forEach(item =>{
+            item.className =  "catalog__content ";           
+        });
+        elCatContent[i].className ="catalog__content catalog__content_active";
+    });
+});
 
-elTab[0].onclick = tab1;
-elTab[1].onclick = tab2;
-elTab[2].onclick = tab3;
 
 //Переключение вида карточки
 const elMain = document.querySelectorAll(".catalog-item__link-main");
