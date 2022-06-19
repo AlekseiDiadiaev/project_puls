@@ -80,9 +80,9 @@
             <div class="feed-form">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут
                 <form action="#" class="consultation__form">
                     <input name="name" required placeholder="Ваше имя"  type="text">
-                    <input name="phone" required placeholder="Ваш телефон"  type="number">
+                    <input name="phone" required placeholder="Ваш телефон"  type="tel">
                     <input name="email" required placeholder="Ваш E-mail"  type="email">
-                    <button class="button button_feed-form">заказать консультацию</button>
+                    <input type="submit" class="button button_feed-form" value="заказать консультацию">
                 </form>
             </div>
         </div>
@@ -431,33 +431,33 @@
         </div>
     </footer>
     <div class="overlay">
-        <div class="modal" id="modal__consult">
+        <div class="modal modal_consult-hidden" id="modal__consult">
             <div class="modal__close">&times;</div>
             <h3 class="modal__title">Просто заполните форму заявки</h3>
             <span class="modal__descr">и мы перезвоним вам в течении 10 минут</span>
             <div class="feed-form feed-form_mod-margin">
                 <form action="#" class="consultation__form">
                     <input name="name" required placeholder="Ваше имя"  type="text">
-                    <input name="phone" required placeholder="Ваш телефон"  type="number">
+                    <input name="phone" required placeholder="Ваш телефон"  type="tel">
                     <input name="email" required placeholder="Ваш E-mail"  type="email">
                     <button class="button button_feed-form">заказать консультацию</button>
                 </form>
             </div>
         </div>
-        <div class="modal" id="modal__buy">
+        <div class="modal modal_buy-hidden" id="modal__buy">
             <div class="modal__close">&times;</div>
             <h3 class="modal__title">Ваш заказ:</h3>
             <span class="modal__descr">Пульсометр Polar FT1</span>
             <div class="feed-form feed-form_mod-margin">
                 <form action="#" class="consultation__form">
                     <input name="name" required placeholder="Ваше имя"  type="text">
-                    <input name="phone" required placeholder="Ваш телефон"  type="number">
+                    <input name="phone" required placeholder="Ваш телефон"  type="tel">
                     <input name="email" required placeholder="Ваш E-mail"  type="email">
-                    <button class="button button_feed-form">заказать консультацию</button>
+                    <button class="button button_feed-form">купить</button>
                 </form>
             </div>
         </div>
-        <div class="modal" id="modal__mini">
+        <div class="modal modal_mini-hidden" id="modal__mini">
             <div class="modal__close">&times;</div>
             <h3 class="modal__title">Спасибо за вашу заявку!</h3>
             <span class="modal__descr">Наш менеджер свяжется с вами<br> в ближайшее время!</span>
@@ -468,7 +468,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="tab/sc.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
 </body>
 </html>
 

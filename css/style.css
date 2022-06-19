@@ -643,6 +643,7 @@
 }
 
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -650,6 +651,10 @@
   background-color: rgba(0, 0, 0, 0.56);
   z-index: 1;
   display: none;
+}
+
+.overlay_active {
+  display: block;
 }
 
 .feed-form_mod-margin form :first-child {
@@ -661,7 +666,7 @@
 }
 
 .modal {
-  display: none;
+  display: block;
   width: 380px;
   min-height: 130px;
   background-color: #F2F2F2;
@@ -673,6 +678,18 @@
   text-align: center;
 }
 
+.modal_consult-hidden {
+  display: none;
+}
+
+.modal_buy-hidden {
+  display: none;
+}
+
+.modal_mini-hidden {
+  display: none;
+}
+
 .modal__close {
   font-size: 40px;
   position: absolute;
@@ -680,6 +697,7 @@
   z-index: 2;
   right: -43px;
   top: -22px;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -946,5 +964,15 @@
   }
   .reviews-item__text-box {
     padding: 30px 0 30px 0px;
+  }
+  .modal {
+    width: 260px;
+  }
+  .modal .button_feed-form {
+    width: 212px;
+  }
+  .modal__close {
+    right: 4px;
+    top: -18px;
   }
 }

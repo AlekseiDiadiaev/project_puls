@@ -314,4 +314,16 @@
         }
 
     }
+    .modal {
+        width: 260px;
+        .button{
+            &_feed-form {
+                width: 212px;
+            }    
+        }
+        &__close{
+            right: 4px;
+            top: -18px;
+        }
+    }
 }
