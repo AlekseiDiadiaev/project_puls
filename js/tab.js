@@ -84,10 +84,22 @@ document.querySelectorAll(".button_catalog-item").forEach(item => {
 }); 
 //Вызов окна спасибо
 document.querySelectorAll('.consultation__form').forEach(item =>{
-    item.addEventListener('submit', () => {
+    item.addEventListener('submit', (e) => {
+        e.preventDefault();
         document.querySelector('.overlay').className ="overlay overlay_active";
-        document.querySelector('.modal_consult-hidden').className = "modal modal_buy-hidden";
-        document.querySelector('.modal_buy-hidden').className = "modal modal_buy-hidden";
-        document.querySelector('.modal_mini-hidden').className = "modal";
+        document.querySelectorAll('.modal').forEach((item,i) =>{
+            switch (i){
+                case 0: 
+                item.className = "modal modal_consult-hidden";
+                break; 
+                case 1: 
+                item.className = "modal modal_buy-hidden";
+                break; 
+                case 2: 
+                item.className = "modal";
+                break; 
+            } 
+        });
     });
 });
+console.log(document.querySelectorAll('.consultation__form'));
