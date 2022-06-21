@@ -83,7 +83,7 @@ document.querySelectorAll(".button_catalog-item").forEach(item => {
     });
 }); 
 //Вызов окна спасибо
-document.querySelectorAll('.consultation__form').forEach(item =>{
+/* document.querySelectorAll('.consultation__form').forEach(item =>{
     item.addEventListener('submit', (e) => {
         e.preventDefault();
         document.querySelector('.overlay').className ="overlay overlay_active";
@@ -102,4 +102,4 @@ document.querySelectorAll('.consultation__form').forEach(item =>{
         });
     });
 });
-console.log(document.querySelectorAll('.consultation__form'));
+console.log(document.querySelectorAll('.consultation__form')); */

@@ -63,4 +63,13 @@
         color: #0D0D0D;
         
     }
+    .error {
+        font-size: 14px;
+        border: 1px solid red;
+        color: #000;
+    }
+    label.error{
+        border: none;
+    }
+    
 }
