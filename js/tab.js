@@ -30,7 +30,8 @@ function second(){
     elMain[0].className = "catalog-item__main catalog-item__main_active";
 }
 elMain.forEach((item, i ) => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+       e.preventDefault()
        const mainDivCard = item.parentElement;
        mainDivCard.className = "catalog-item__main catalog-item__main_active";
        mainDivCard.nextSibling.nextSibling.className = "catalog-item__second catalog-item__second_active"; 
@@ -38,7 +39,8 @@ elMain.forEach((item, i ) => {
 });
 
 elSecond.forEach((item, i ) => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault()
         const secondDivCard = item.parentElement;
         secondDivCard.className = "catalog-item__second";
         secondDivCard.previousSibling.previousSibling.className = "catalog-item__main"; 
